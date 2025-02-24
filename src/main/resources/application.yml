@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: familyfinance
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/family_finance_db?createDatabaseIfNotExist=true
+    username: root
+    password: Aditya@8088
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  ai:
+    openai:
+      api-key: YOUR_OPENAI_API_KEY
+
+
+  plaid:
+    client-id: 67bb11b02698e0001ffa19b2
+    secret: fc6d7531c524484c1b780c8241b83b
+    environment: sandbox
